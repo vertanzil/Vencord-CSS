@@ -75,3 +75,24 @@
 .membersGroup_c8ffbb {
     padding: var(--space-xs) var(--space-xxs) var(--space-xs) var(--space-sm)!important;
 }
+
+/* Reposition sidebar ^ remove padding*/
+/* Force sidebar to be full height */
+.bar_c38106 { padding-left: 0px; }
+.sidebarList_c48ade, .notice__6e2b9 {
+    border-top-left-radius: 0px!important;
+    border-top: 0px!important;
+}
+.notice__6e2b9 {
+    border-left: 0px!important;
+    border-bottom: 1px solid var(--app-border-frame);
+}
+.tutorialContainer__1f388 {
+    padding-top: calc(var(--space-xs) * 2); /* Fix padding on home button */
+}
+.visual-refresh .base_c48ade {
+    grid-template-rows: [top] min-content [titleBarEnd] min-content [noticeEnd] 1fr [end];
+    grid-template-areas: "notice     notice       notice"
+                         "guildsList channelsList titleBar"
+                         "guildsList channelsList page";
+}
